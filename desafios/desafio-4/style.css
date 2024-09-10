@@ -59,8 +59,7 @@ section{
 }
 
 section.normal > p{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-bottom: 2em;
 }
 
 section.imagem{
@@ -71,9 +70,11 @@ section.imagem{
 }
 
 section.imagem > p{
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.877);
-    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.767);
+    background-color: rgba(0, 0, 0, 0.24);
     display: inline-block;
+    color: white;
+    padding: 10px;
 }
 
 section#img1{
