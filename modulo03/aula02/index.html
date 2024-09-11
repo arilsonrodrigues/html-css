@@ -9,18 +9,36 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        table{
-            width: 400px;
-            border-collapse: collapse;
+        tbody > tr:nth-child(2n){
+            background-color: lightsteelblue;
         }
 
+        caption{
+            color: black;
+            padding: 10px;
+            font-weight: bolder;
+        }
+
+        table{
+            width: 300px;
+            border-collapse: collapse;
+            position: relative;
+            margin: auto;
+        }
+
+        thead{
+            position: sticky;
+            top: -1px;
+        }
+
+        thead  th, tfoot th{
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        
         th, td{
             border: 1px solid black;
             padding: 10px;
-        }
-
-        th{
-            background-color: lightslategray;
         }
 
         .num{
@@ -30,128 +48,125 @@
 </head>
 <body>
     <table>
-     <thead>
+        <caption>Estados brasileiros</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </thead>
+        <tbody>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
-        </tr>
-     </thead>
-     <tbody>
-        <tr>
-        <td>São Paulo</td>
-        <td class="num">45 973 190</td>
-        </tr>
-        <tr>
-        <td>Minas Gerais</td>
-        <td class="num">21 322 692</td> class="num"
+            <td>São Paulo</td>
+            <td class="num">45 973 190</td>
         </tr>
         <tr>
-        <td>Rio de Janeiro</td>
-        <td class="num">17 219 679</td>
+            <td>Minas Gerais</td>
+            <td class="num">21 322 692</td>
         </tr>
         <tr>
-        <td>Bahia</td>
-        <td class="num">14 850 513</td>
+            <td>Rio de Janeiro</td>
+            <td class="num">21 322 692</td>
         </tr>
         <tr>
-        <td>Paraná</td>
-        <td class="num">11 824 665</td>
+            <td>Bahia</td>
+            <td class="num">14 850 513</td>
         </tr>
         <tr>
-        <td>Rio Grande do Sul</td>
-        <td class="num">11 229 915</td>
+            <td>Paraná</td>
+            <td class="num">11 824 665</td>
         </tr>
         <tr>
-        <td>Pernambuco</td>
-        <td class="num">9 539 029</td>
+            <td>Rio Grande do Sul</td>
+            <td class="num">11 229 915</td>
         </tr>
         <tr>
-        <td>Ceará</td>
-        <td class="num">9 233 656</td>
+            <td>Pernambuco</td>
+            <td class="num">9 539 029</td>
         </tr>
         <tr>
-        <td>Pará</td>
-        <td class="num">8 664 306</td>
+            <td>Ceará</td>
+            <td class="num">9 233 656</td>
         </tr>
         <tr>
-        <td>Santa Catarina</td>
-        <td class="num">8 058 447</td>
+            <td>Pará</td>
+            <td class="num">8 664 306</td>
         </tr>
         <tr>
-        <td>Goiás</td>
-        <td class="num">7 350 483</td>
+            <td>Santa Catarina</td>
+            <td class="num">8 058 447</td>
         </tr>
         <tr>
-        <td>Maranhão</td>
-        <td class="num">7 010 960</td>
+            <td>Goiás</td>
+            <td class="num">7 350 483</td>
         </tr>
         <tr>
-        <td>Amazonas</td>
-        <td class="num">4 281 209</td>
+            <td>Maranhão</td>
+            <td class="num">7 010 960</td>
         </tr>
         <tr>
-        <td>Paraíba</td>
-        <td class="num">4 145 040</td>
+            <td>Amazonas</td>
+            <td class="num">4 281 209</td>
         </tr>
         <tr>
-        <td>Espírito Santo</td>
-        <td class="num">4 102 129</td>
+            <td>Paraíba</td>
+            <td class="num">4 145 040</td>
         </tr>
         <tr>
-        <td>Mato Grosso</td>
-        <td class="num">3 836 399</td>
+            <td>Espírito Santo</td>
+            <td class="num">4 102 129</td>
         </tr>
         <tr>
-        <td>Rio Grande do Norte</td>
-        <td class="num">3 446 071</td>
+            <td>Mato Grosso</td>
+            <td class="num">3 836 399</td>
         </tr>
         <tr>
-        <td>Piauí</td>
-        <td class="num">3 375 646</td>
+            <td>Rio Grande do Norte</td>
+            <td class="num">3 446 071</td>
         </tr>
         <tr>
-        <td>Alagoas</td>
-        <td class="num">3 220 104</td>
+            <td>Piauí</td>
+            <td class="num">3 375 646</td>
         </tr>
         <tr>
-        <td>Distrito Federal</td>
-        <td class="num">2 982 815</td>
+            <td>Alagoas</td>
+            <td class="num">3 220 104</td>
         </tr>
         <tr>
-        <td>Mato Grosso do Sul</td>
-        <td class="num">2 901 895</td>
+            <td>Distrito Federal</td>
+            <td class="num">2 982 815</td>
         </tr>
         <tr>
-        <td>Sergipe</td>
-        <td class="num">2 291 077</td>
+            <td>Mato Grosso do Sul</td>
+            <td class="num">2 901 895</td>
         </tr>
         <tr>
-        <td>Rondônia</td>
-        <td class="num">1 746 227</td>
+            <td>Sergipe</td>
+            <td class="num">2 291 077</td>
         </tr>
         <tr>
-        <td>Tocantins</td>
-        <td class="num">1 577 342</td>
+            <td>Rondônia</td>
+            <td class="num">1 746 227</td>
         </tr>
         <tr>
-        <td>Acre</td>
-        <td class="num">880 631</td>
+            <td>Tocantins</td>
+            <td class="num">1 577 342</td>
         </tr>
         <tr>
-        <td>Amapá</td>
-        <td class="num">802 837</td>
+            <td>Acre</td>
+            <td class="num">880 631</td>
         </tr>
         <tr>
-        <td>Roraima</td>
-        <td class="num">716 793</td>
+            <td>Amapá</td>
+            <td class="num">802 837</td>
         </tr>
-     </tbody>
-     <tfoot>
         <tr>
-            <th>Total</th>
+            <td>Roraima</td>
+            <td class="num">716 793</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total</th>
             <td class="num">212 583 720</td>
-        </tr>
-     </tfoot>
+        </tfoot>
     </table>
 </body>
 </html>
