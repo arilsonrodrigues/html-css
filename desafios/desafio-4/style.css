@@ -16,8 +16,8 @@
     --fonte3: "Sriracha", 'cursive';
 }
 
-body{
-    background-color: darkgray;
+html, body{
+    font-family: var(--fonte1);
     min-height: 100vh;
 }
 
@@ -25,23 +25,23 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 20px 0px 20px 0px;
     width: 100%;
 }
 
-header > h1{
+header h1{
     font-family: var(--fonte2);
     font-size: 8vw;
+    padding-top: 20px;
 }
 
-header p, footer p{
-    font-family: var(--fonte1);
+header  p{
+    padding-bottom: 20px;
 }
 
 header a, footer a{
-    color: white;
     text-decoration: none;
     font-weight: bolder;
+    color: white;
 }
 
 header a:hover, footer a:hover{
@@ -49,37 +49,34 @@ header a:hover, footer a:hover{
 }
 
 section{
-    background-color: white;
-    padding-left: 10vw;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    font-family: var(--fonte3);
-    font-size: 3vw;
-    line-height: 1.5em;
+    padding-left: 10%;
 }
 
-section.normal > p{
-    padding-bottom: 2em;
+.normal p{
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
-section.imagem{
-    background-size: cover;
+.imagem{
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.932);
 }
 
-section.imagem > p{
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.767);
-    background-color: rgba(0, 0, 0, 0.24);
-    display: inline-block;
+.imagem p{
+    background-color: rgba(0, 0, 0, 0.295);
     color: white;
+    display: inline-block;
     padding: 10px;
 }
 
 section#img1{
     background-image: url('imagens/background001.jpg');
-    background-position: center center;
 }
 
 section#img2{
@@ -88,8 +85,8 @@ section#img2{
 
 footer{
     background-color: black;
-    text-align: center;
     color: white;
-    line-height: 1em;
+    line-height: 1.5em;
+    text-align: center;
     padding: 10px;
 }
