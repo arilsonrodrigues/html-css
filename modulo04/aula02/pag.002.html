@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        col.cnome{
+            background-color: brown;
+        }
+
+        col.csexo{
+            background-color: yellowgreen;
+        }
+
+        col.cgrupo{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+        <table>
+            <colgroup>
+                    <col class="cnome">
+                    <col class="csexo">
+                    <col class="cgrupo" span="2">
+            </colgroup>
+            <thead>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Cidade</th>
+                    <th scope="col">Professor</th>
+            </thead>
+                <tr>
+                    <td>Antonio</td>
+                    <td>Masculino</td>
+                    <td>Rio de Janeiro</td>
+                    <td>Plínio</td>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>Masculino</td>
+                    <td>São Paulo</td>
+                    <td>Vicente</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>Feminino</td>
+                    <td>Minas Gerais</td>
+                    <td>Marcos</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>Masculino</td>
+                    <td>Fortaleza</td>
+                    <td>Cleiton</td>
+                </tr>
+        </table>
+</body>
+</html>
