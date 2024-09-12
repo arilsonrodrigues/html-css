@@ -48,12 +48,21 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
+div#container{
+    background-color: rgba(0, 0, 0, 0.13);
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0px 10px 0px 10px;
+    margin: auto;
+}
+
 section{
     font-family: var(--fonte3);
     font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 10%;
+    margin: 0px 50px 0px 50px;
 }
 
 .normal p{
@@ -66,6 +75,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    border-radius: 10px;
 }
 
 .imagem p{
