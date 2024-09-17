@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste</h1>
+    <form action="metodo.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="iano">Ano de seu nascimento:</label>
+            <input type="number" name="ano" id="iano" oninput="iidade.innerHTML = 2024 - Number(iano.value)">
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade:</label>
+            <output id="iidade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
