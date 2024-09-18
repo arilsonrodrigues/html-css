@@ -19,20 +19,75 @@ extra large screens:
 
 /*todas as demais mídias*/
 @media print{
+ *{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1em;
+    font-family: 'Courier New', Courier, monospace;
+ }
+
+body{
+    background-image: url('../imagens/icon-print.png');        
+}
+
+main{
+    border: 2px solid black;
+}
+
+main::after{
+    content: 'Impresso por www.cursoemvideo';
+    display: block;
+    text-align: center;
+}
+
+.tablet, .phone, .pc, .tv{
+    display: none;
+}
+
+.imp{
+display: block;
+}
 
 }
 
-@media screen and (min-width: 481px) and (max-width: 760px){
+@media screen and (min-width: 760px){
 /*tablet*/
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+    .imp, .phone, .pc, .tv{
+        display: none;
+    }
     
+    .tablet{
+    display: block;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px){
 /*pc*/
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+    .imp, .phone, .tablet, .tv{
+        display: none;
+    }
 
+    .pc{
+    display: block;
+    }
 }
 
 @media screen and (min-width: 1201px){
 /*grandes telas*/
-    
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+    .imp, .phone, .pc, .tablet{
+        display: none;
+    }
+
+    .tv{
+    display: block;
+    }
 }
