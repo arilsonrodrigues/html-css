@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*Typical Device Brekpoints
+
+dispositivos móveis(mobiel devices): 320px(width)-480px(width)
+
+ipads, tablets: 481px-760px
+
+telas pequenas(small screens), laptops: 769px-1024px 
+
+pc, telas grandes(large screens): 1025px-1200px
+
+extra large screens:
+(telas extra grandes), tv: 1201px, and more(e mais)
+
+*/
+
+/*===========================================================*/
+
+/*todas as demais mídias*/
+@media print{
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px){
+/*tablet*/
+    
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+/*pc*/
+
+}
+
+@media screen and (min-width: 1201px){
+/*grandes telas*/
+    
+}
