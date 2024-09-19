@@ -21,8 +21,21 @@ header h1{
     padding: 10px;
 }
 
-nav{
+span.material-symbols-outlined{
     display: block;
+    text-align: center;
+    background-color: rgb(21, 22, 22);
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+}
+
+span.material-symbols-outlined:hover{
+    background-color: gray;
+}
+
+nav{
+    display: none;
 }
 
 nav ul{
