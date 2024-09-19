@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: darkviolet;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section#login{
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#login > div#imagem{
+    background: darkviolet url('../imagens/lawlesscapture.jpg');
+    height: 200px;
+    margin: -10px -10px 0px -10px;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
