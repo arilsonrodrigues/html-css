@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquerie.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu Site</h1>
         <span class="material-symbols-outlined" onclick="info()"></svg>Menu</span>
@@ -36,6 +37,14 @@
                 itens.style.display = 'none'
             }else{
                 itens.style.display = 'block'
+            }
+        }
+
+        function mudoutamanho(){
+            if(innerWidth >= 789){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
             }
         }
     </script>
