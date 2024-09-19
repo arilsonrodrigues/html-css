@@ -23,7 +23,6 @@ section#login{
     background-color: white;
     width: 250px;
     height: 500px;
-    padding: 10px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -32,12 +31,101 @@ section#login{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
-    background: darkviolet url('../imagens/lawlesscapture.jpg');
+    background-image: url('../imagens/lawlesscapture.jpg');
     height: 200px;
-    margin: -10px -10px 0px -10px;
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: left bottom;
+    background-size: cover;
+}
+
+section#login > div#formulario{
+    padding: 10px;
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p{
+    font-size: 0.8em;
+}
+
+.campo{
+    background-color: darkviolet;
+    border: 2px solid darkviolet;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px 5px 0px;
+}
+
+label{
+    display: none;
+}
+
+.campo span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo input{
+    background-color: rgb(70, 97, 70);
+    font-size: 1em;
+    width: calc(100% - 44px);
+    transform: translateY(-13px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.campo > input:focus-within{
+    background-color: white;
+}
+
+form > .entrar{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 7px;
+}
+
+form > .entrar:hover{
+    background-color: rgb(78, 92, 78);
+}
+
+form > .botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid rgb(135, 194, 135);
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+form > .botao:hover{
+    background-color: rgb(180, 196, 180);
+}
+
+.botao span{
+    font-size: 0.8em;
 }
