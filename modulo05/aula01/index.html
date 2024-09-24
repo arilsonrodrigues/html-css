@@ -5,40 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
     <style>
-        .container{
-            background-color: lightskyblue;
-            display: flex;
-            flex-flow: row nowrap;
-        }
-
-        .item{
-            border: 1px solid black;
+        div#container{
             background-color: lightslategray;
-            text-align: center;
-            flex-basis: 200px;
+            display: flex;
+            flex-flow: row wrap;
         }
-
+        .item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            padding: 30px;
+            text-align: center;
+        }
         div#a{
-            flex-shrink: 0;
-            flex-grow: 1;
+            flex:auto
         }
         div#b{
-            flex-shrink: 1;
-            flex-grow: 1;
+            flex: none;
         }
         div#c{
-            flex-shrink: 8;
-            flex-grow: 1;
+            flex: initial;
         }
-
+        div#d{
+            flex: 3;
+        }
     </style>
-</head>
 <body>
-        <div class="container">
-            <div class="item" id="a">opção A</div>
-            <div class="item" id="b">opção B</div>
-            <div class="item" id="c">opção C</div>
-        </div>
+    <div id="container">
+        <div class="item" id="a">Opção 1</div>
+        <div class="item" id="b">Opção 2</div>
+        <div class="item" id="c">Opção 3</div>
+        <div class="item" id="d">Opção 4</div>
+    </div>
 </body>
 </html>
